@@ -1,0 +1,23 @@
+body {
+  background-image: url("img/amoled-the-weeknd-vertical-iphone-hd-wallpaper-preview.jpg");
+  position: relative;
+}
+.container {
+ 
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.form-select{
+                      margin-bottom: 10px;
+}
+
+p{
+  font-size: larger;   
+
+  margin: auto;                
+}
+
+.card{
+margin-top: 80px;
+}
