@@ -1,23 +1,45 @@
 body {
-  background-image: url("img/amoled-the-weeknd-vertical-iphone-hd-wallpaper-preview.jpg");
-  position: relative;
 }
 .container {
- 
   justify-content: center;
   align-items: center;
   height: 100%;
 }
-.form-select{
-margin-bottom: 10px;
+.background {
+  background-image: url("img/pexels-charlotte-may-5825599.jpg");
+  /*position: relative;*/
+  background-position: center;
+  height: 100%;
+  background-size: cover;
+}
+.form-select {
+  margin-bottom: 10px;
 }
 
-p{
-  font-size: larger;   
+p {
+  font-size: larger;
 
-  margin: auto;                
+  margin: auto;
 }
 
-.card{
-margin-top: 80px;
+.card {
+  margin-top: 80px;
+  
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgb(172 171 167 / 10%);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  color: whitesmoke;
+
+}
+.card iframe{
+  background-color: transparent !important;
+}
+#_next{
+  background-color: none;
+}
+
+.card-img {
+  width: 250px;
 }
