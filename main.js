@@ -49,7 +49,7 @@ function handleSongSelection() {
         coverImage.src = selectedSong.cover;
 
         var realFan = document.getElementById("realFan")
-         if(selectedSong.year < 2019 && selectedSong.year > 2018){
+         if(selectedSong.year > 2019 && selectedSong.year < 2018){
         realFan.innerHTML = "Your not a real fan :("
     }else{
         realFan.innerHTML ="You are a real fan"

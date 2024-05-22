@@ -4,7 +4,9 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
+  overflow: auto;
 }
+
 .background {
   background-image: url("img/pexels-charlotte-may-5825599.jpg");
   /*position: relative;*/
@@ -12,34 +14,40 @@ body {
   height: 100%;
   background-size: cover;
 }
+
 .form-select {
   margin-bottom: 10px;
 }
 
 p {
   font-size: larger;
-
   margin: auto;
 }
 
 .card {
-  margin-top: 80px;
-  
+  margin-top: 70px;
+  margin-bottom: 80px;
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgb(172 171 167 / 10%);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
   color: whitesmoke;
-
 }
-.card iframe{
+.card iframe {
   background-color: transparent !important;
-}
-#_next{
-  background-color: none;
 }
 
 .card-img {
   width: 250px;
+  margin-bottom: 15px;
+}
+
+h3{
+  color: black;
+}
+p{
+  color: rgb(24, 21, 21);
+  font-family: 'Aeonik pro';
+  font-size: larger;
 }
