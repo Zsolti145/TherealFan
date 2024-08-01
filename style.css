@@ -82,6 +82,10 @@ form .form-input{
   background-color: #2f2f2f70;
   border-radius: 6px;
 }
+.form-input:focus{
+  background-color: #ffffff9c;
+}
+
 form textarea{
   padding: 0.5rem;
   width: 100%;
@@ -91,6 +95,10 @@ form textarea{
   height: 385px;
   resize: none;
 }
+textarea:focus{
+  background-color: #ffffff9c;
+}
+
 
 textarea::placeholder{
   color: rgb(248, 240, 240);
