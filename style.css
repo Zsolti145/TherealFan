@@ -1,10 +1,16 @@
-body {
+
+*{
+  margin:0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
 }
+
 .container {
-  justify-content: center;
-  align-items: center;
   height: 100%;
   overflow: auto;
+  max-width: 1200px;
 }
 
 .background {
@@ -17,7 +23,17 @@ body {
 
 .form-select {
   margin-bottom: 10px;
+  padding: 0.9rem;
+  background:  #2f2f2f70  !important;
+  transition: 0.5s ease;
+  color: #E0E0E0;
 }
+.form-select:focus{
+  border-color: #BFBFBF;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.658);
+}
+
 
 p {
   font-size: larger;
@@ -25,8 +41,7 @@ p {
 }
 
 .card {
-  margin-top: 70px;
-  margin-bottom: 80px;
+  margin-top: 25px;
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgb(172 171 167 / 10%);
@@ -44,10 +59,65 @@ p {
 }
 
 h3{
-  color: black;
+  color: white;
 }
 p{
   color: rgb(24, 21, 21);
   font-family: 'Aeonik pro';
   font-size: larger;
+}
+#realFan{
+color: white;
+font-size: 30px;
+}
+#songDetail{
+  color: white;
+}
+
+form .form-input{
+  margin: 5px auto;
+  padding: 0.5rem;
+  width: 100%;
+  color: rgb(17, 17, 17);
+  background-color: #2f2f2f70;
+  border-radius: 6px;
+}
+form textarea{
+  padding: 0.5rem;
+  width: 100%;
+  background-color: #2f2f2f70;
+  border-radius: 6px;
+  color: rgb(17, 17, 17);
+  height: 385px;
+  resize: none;
+}
+
+textarea::placeholder{
+  color: rgb(248, 240, 240);
+}
+
+input::placeholder{
+color: rgb(248, 240, 240);
+}
+
+p {
+  color: white;
+  font-size: 2rem;
+}
+
+
+
+.form-btn{
+   margin: 15px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #6F6F6F;
+    border-radius: 5px;
+    transition: 0.5s ease;
+
+}
+.form-btn:hover{
+background-color: #BFBFBF;
+box-shadow: #353533;
+transform: scale3d(1.1,1.1,1.1);
 }

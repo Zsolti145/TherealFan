@@ -11,31 +11,68 @@
   </head>
   <body>
     <section class="background">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-6 col-lg-4">
-          <div class="card">
-            <div class="card-body text-center">
-              <h3>Choose a The Weekend song!</h3>
-              <img class="card-img" id="coverImage"src="https://www.theweeknd.com/files/2021/10/photo_202110_07_GENERAL-BRIANZIFF_THEWEEKND_800_1-WITH-BEAUTY-crop-1.jpeg" width="150px" height="250px"/>
-              
-              <select id="songSelector" class="form-select">
-                <option value="">Select a song</option>
-              </select>
-              <p id="songDetail"></p>
-              <p id="realFan"></p>
-              <hr>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-5">
+            <div class="card">
+              <div class="card-body text-center">
+                <h3>Choose a The Weekend song!</h3>
+                <img class="card-img" id="coverImage" src="https://www.theweeknd.com/files/2021/10/photo_202110_07_GENERAL-BRIANZIFF_THEWEEKND_800_1-WITH-BEAUTY-crop-1.jpeg"  width="150px" height="250px" />
+                <select id="songSelector" class="form-select">
+                  <option value="">Select a song</option>
+                </select>
+                <p id="songDetail"></p>
+                <p id="realFan"></p>
+                <hr />
+              </div>
+              <div class="card-body text-center">
+                <iframe  class="music" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX6bnzK9KPvrz?utm_source=generator&theme=0"  width="100%" height="152"frameborder="0" allowfullscreen=""llow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowtransparency="true" loading="lazy"></iframe>
+              </div>
             </div>
-            <div class="card-body text-center">
-                <iframe style="border-radius:12px; background-color: 0;" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX6bnzK9KPvrz?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowtransparency="true" loading="lazy"></iframe>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <div class="card-body text-center">
+                <p>Give us a feedback!</p>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="2b1567bb-7e20-443b-ac9e-ed2b531ca777"
+                  />
+
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="name"
+                    required
+                    placeholder="Name"
+                  />
+                  <input
+                    class="form-input"
+                    type="email"
+                    name="email"
+                    required
+                    placeholder="Email"
+                  />
+                  <textarea
+                    name="message"
+                    required
+                    placeholder="Your feedback"
+                  ></textarea>
+                  <input
+                    type="hidden"
+                    name="redirect"
+                    value="https://web3forms.com/success"
+                  />
+                  <button class="form-btn" type="submit">Submit Form</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-</section>
-    <!--Needs to change the background
-future updates: more songs and a celan card appereance -->
+    </section>
 
     <script src="main.js"></script>
     <script
